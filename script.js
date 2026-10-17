@@ -67,7 +67,7 @@ function openCourse(card) {
 }
 
 function normalizeSearchText(value) {
-    return value.normalize("NFD").replace(/[\\u0300-\\u036f]/g, "").toLowerCase().trim();
+    return value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().trim();
 }
 
 searchInput.addEventListener("input", () => {
