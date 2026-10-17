@@ -1,4 +1,6 @@
 const cards = document.querySelectorAll(".card");
+const searchInput = document.querySelector("#course-search");
+const searchStatus = document.querySelector("#search-status");
 const details = document.querySelector("#course-details");
 const title = document.querySelector("#course-title");
 const description = document.querySelector("#course-description");
@@ -63,6 +65,28 @@ function openCourse(card) {
     details.scrollIntoView({ behavior: "smooth", block: "start" });
     closeButton.focus({ preventScroll: true });
 }
+
+function normalizeSearchText(value) {
+    return value.normalize("NFD").replace(/[\\u0300-\\u036f]/g, "").toLowerCase().trim();
+}
+
+searchInput.addEventListener("input", () => {
+    const query = normalizeSearchText(searchInput.value);
+    let visibleCount = 0;
+
+    cards.forEach((card) => {
+        const searchableText = normalizeSearchText(card.textContent);
+        const matches = searchableText.includes(query);
+        card.hidden = !matches;
+        if (matches) visibleCount += 1;
+    });
+
+    searchStatus.textContent = query
+        ? (visibleCount === 0
+            ? "Aucune matière trouvée. Essayez un autre mot-clé."
+            : `${visibleCount} matière(s) trouvée(s).`)
+        : "";
+});
 
 cards.forEach((card) => {
     card.addEventListener("click", () => openCourse(card));
