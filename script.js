@@ -18,6 +18,14 @@ const courses = {
         lesson: `
             <h3>Introduction à la géologie du Maroc</h3>
             <p>Le Maroc possède une histoire géologique complexe. Il comprend plusieurs domaines géologiques, notamment le Rif, la Meseta, le Haut Atlas et l'Anti-Atlas.</p>
+            <h4>Dans le cours complet</h4>
+            <ul>
+                <li>Les domaines géologiques du Maroc et les boutonnières de l'Anti-Atlas.</li>
+                <li>Les cycles éburnéen et panafricain.</li>
+                <li>Les massifs de Saghro, Bou Azzer–El Graara et Kerdous.</li>
+                <li>Les ophiolites, la couverture paléozoïque et l'orogenèse hercynienne.</li>
+            </ul>
+            <p><a class="full-course-link" href="geologie-maroc.html">Ouvrir le cours complet de Géologie du Maroc →</a></p>
             <h4>Objectif du cours</h4>
             <p>Comprendre l'évolution des roches, les déformations tectoniques et les grandes étapes de l'histoire géologique du Maroc.</p>
         `
