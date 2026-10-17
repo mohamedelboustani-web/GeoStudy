@@ -65,9 +65,13 @@
         <section id="course-details" class="course-details" aria-live="polite" hidden>
             <h2 id="course-title"></h2>
             <p id="course-description"></p>
-            <button id="read-course" type="button">Lire le cours</button>
-            <button id="close-course" type="button">Retour aux matières</button>
+            <div class="course-actions" aria-label="Contenu de la matière">
+                <button id="read-course" type="button" aria-pressed="false">Lire le cours</button>
+                <button id="show-quiz" type="button" aria-pressed="false">Faire le quiz</button>
+                <button id="close-course" type="button">Retour aux matières</button>
+            </div>
             <div id="course-content" hidden></div>
+            <section id="course-quiz" class="course-quiz" aria-live="polite" hidden></section>
         </section>
     </main>
 
