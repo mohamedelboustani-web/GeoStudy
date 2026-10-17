@@ -1,78 +1,73 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GeoStudy - Apprendre la géologie</title>
+    <meta name="theme-color" content="#12372a">
+    <meta name="description" content="GeoStudy : révisez la géologie, la télédétection, la topographie et la géomatique.">
+    <title>GeoStudy — Apprendre la géologie</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<nav class="navbar">
-    <a href="#" class="nav-logo">GeoStudy</a>
-
-    <div class="nav-links">
-        <a href="#">Accueil</a>
-        <a href="#matieres">Matières</a>
-        <a href="#course-details">Mes cours</a>
-    </div>
-</nav>
+    <nav class="navbar" aria-label="Navigation principale">
+        <a href="#" class="nav-logo">GeoStudy</a>
+        <div class="nav-links">
+            <a href="#">Accueil</a>
+            <a href="#matieres">Matières</a>
+            <a href="#course-details">Mes cours</a>
+        </div>
+    </nav>
 
     <header class="hero">
-        <p class="logo">GEOSTUDY</p>
+        <p class="logo">GEOSTUDY · SCIENCES DE LA TERRE</p>
         <h1>Apprenez la géologie autrement</h1>
-        <p class="description">
-            Organisez vos cours et progressez chaque jour.
-        </p>
+        <p class="description">Organisez vos cours, explorez la Terre et progressez chaque jour.</p>
     </header>
 
     <main class="container" id="matieres">
-        <h2>Mes matières</h2>
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">Votre espace d’apprentissage</p>
+                <h2>Mes matières</h2>
+            </div>
+            <p class="section-note">Choisissez une matière pour commencer à réviser.</p>
+        </div>
 
-        <section class="cards">
-
-            <article class="card">
-                <div class="icon">⛰️</div>
+        <section class="cards" aria-label="Liste des matières">
+            <article class="card" tabindex="0" role="button" aria-label="Ouvrir Géologie du Maroc">
+                <div class="icon" aria-hidden="true">⛰️</div>
                 <h3>Géologie du Maroc</h3>
                 <p>Cours et révisions</p>
             </article>
-
-            <article class="card">
-                <div class="icon">🛰️</div>
+            <article class="card" tabindex="0" role="button" aria-label="Ouvrir Télédétection">
+                <div class="icon" aria-hidden="true">🛰️</div>
                 <h3>Télédétection</h3>
                 <p>Images satellitaires</p>
             </article>
-
-            <article class="card">
-                <div class="icon">📐</div>
+            <article class="card" tabindex="0" role="button" aria-label="Ouvrir Topographie">
+                <div class="icon" aria-hidden="true">📐</div>
                 <h3>Topographie</h3>
                 <p>Mesures et calculs</p>
             </article>
-
-            <article class="card">
-                <div class="icon">🗺️</div>
+            <article class="card" tabindex="0" role="button" aria-label="Ouvrir Géomatique">
+                <div class="icon" aria-hidden="true">🗺️</div>
                 <h3>Géomatique</h3>
                 <p>Cartographie et SIG</p>
             </article>
-
         </section>
-<section id="course-details" class="course-details" hidden>
-    <h2 id="course-title"></h2>
-    <p id="course-description"></p>
 
-    <button id="read-course">Lire le cours</button>
-    <button id="close-course">Retour aux matières</button>
-
-    <div id="course-content" hidden></div>
-</section>
-</main>
+        <section id="course-details" class="course-details" aria-live="polite" hidden>
+            <h2 id="course-title"></h2>
+            <p id="course-description"></p>
+            <button id="read-course" type="button">Lire le cours</button>
+            <button id="close-course" type="button">Retour aux matières</button>
+            <div id="course-content" hidden></div>
+        </section>
+    </main>
 
     <footer>
         <p>GeoStudy — Apprendre, comprendre, progresser.</p>
     </footer>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
-
