@@ -10,57 +10,93 @@
 </head>
 <body>
     <nav class="navbar" aria-label="Navigation principale">
-        <a href="#" class="nav-logo">GeoStudy</a>
+        <a href="#" class="nav-logo" aria-label="GeoStudy, accueil"><span class="brand-mark" aria-hidden="true">G</span><span>GeoStudy</span></a>
         <div class="nav-links">
-            <a href="#">Accueil</a>
+            <a href="#" aria-current="page">Accueil</a>
             <a href="#matieres">Matières</a>
             <a href="#course-details">Mes cours</a>
-            <a href="geologie-maroc.html">Cours complet</a>
+            <a class="nav-course-link" href="geologie-maroc.html">Cours complet <span aria-hidden="true">↗</span></a>
         </div>
     </nav>
 
     <header class="hero">
-        <p class="logo">GEOSTUDY · SCIENCES DE LA TERRE</p>
-        <h1>Apprenez la géologie autrement</h1>
-        <p class="description">Organisez vos cours, explorez la Terre et progressez chaque jour.</p>
+        <div class="hero-grid" aria-hidden="true">
+            <div class="hero-copy">
+                <p class="logo"><span class="status-dot"></span> ESPACE D’APPRENTISSAGE · SCIENCES DE LA TERRE</p>
+                <h1>La Terre a une histoire.<br><span>Apprenez à la lire.</span></h1>
+                <p class="description">Des notions essentielles aux grandes structures géologiques, avancez à votre rythme et transformez vos révisions en découvertes.</p>
+                <div class="hero-actions">
+                    <a class="button-primary" href="#matieres">Explorer les matières <span aria-hidden="true">→</span></a>
+                    <a class="button-secondary" href="geologie-maroc.html">Découvrir le cours complet</a>
+                </div>
+                <div class="hero-proof"><span class="proof-icon" aria-hidden="true">✦</span><span>Comprendre · Réviser · Progresser</span></div>
+            </div>
+            <div class="hero-visual" role="img" aria-label="Illustration abstraite des couches géologiques et des reliefs terrestres">
+                <div class="visual-orbit orbit-one"></div>
+                <div class="visual-orbit orbit-two"></div>
+                <div class="visual-sun"></div>
+                <div class="strata strata-one"></div>
+                <div class="strata strata-two"></div>
+                <div class="strata strata-three"></div>
+                <div class="strata strata-four"></div>
+                <div class="visual-label label-top"><span class="label-point"></span> Sciences de la Terre</div>
+                <div class="visual-label label-bottom"><span class="label-symbol">⌁</span> Explorer les profondeurs</div>
+            </div>
+        </div>
+        <div class="hero-bottom-line" aria-hidden="true"><span>01 / OBSERVER</span><span>02 / COMPRENDRE</span><span>03 / EXPLORER</span></div>
     </header>
 
     <main class="container" id="matieres">
         <div class="section-heading">
             <div>
                 <p class="eyebrow">Votre espace d’apprentissage</p>
-                <h2>Mes matières</h2>
+                <h2>Explorez vos matières<span class="heading-period">.</span></h2>
+                <p class="section-subtitle">Choisissez un domaine et commencez votre prochaine séance.</p>
             </div>
-            <p class="section-note">Choisissez une matière pour commencer à réviser.</p>
+            <div class="section-side-note"><span class="side-note-icon" aria-hidden="true">↘</span><span>Votre prochaine découverte<br><strong>commence ici</strong></span></div>
         </div>
 
-        <div class="course-search">
-            <label for="course-search">Rechercher une matière</label>
+        <div class="search-panel">
+            <div class="search-copy"><span class="search-icon" aria-hidden="true">⌕</span><label for="course-search">Trouver une matière</label></div>
             <input id="course-search" type="search" placeholder="Ex. : géologie, QGIS, télédétection…" autocomplete="off">
             <p id="search-status" class="search-status" aria-live="polite"></p>
         </div>
 
         <section class="cards" aria-label="Liste des matières">
-            <article class="card" tabindex="0" role="button" aria-label="Ouvrir Géologie du Maroc">
-                <div class="icon" aria-hidden="true">⛰️</div>
+            <article class="card geology-card" tabindex="0" role="button" aria-label="Ouvrir Géologie du Maroc">
+                <div class="card-topline"><span class="icon" aria-hidden="true">⛰</span><span class="card-number">01</span></div>
+                <span class="card-category">GÉOLOGIE</span>
                 <h3>Géologie du Maroc</h3>
-                <p>Cours détaillé · Anti-Atlas et Précambrien</p>
+                <p>Explorez l’histoire du territoire, du Précambrien à l’Anti-Atlas.</p>
+                <span class="card-link">Explorer le cours <span aria-hidden="true">↗</span></span>
             </article>
             <article class="card" tabindex="0" role="button" aria-label="Ouvrir Télédétection">
-                <div class="icon" aria-hidden="true">🛰️</div>
+                <div class="card-topline"><span class="icon" aria-hidden="true">🛰️</span><span class="card-number">02</span></div>
+                <span class="card-category">IMAGERIE</span>
                 <h3>Télédétection</h3>
-                <p>Images satellitaires</p>
+                <p>Interprétez les images satellitaires et observez la surface terrestre.</p>
+                <span class="card-link">Explorer le cours <span aria-hidden="true">↗</span></span>
             </article>
             <article class="card" tabindex="0" role="button" aria-label="Ouvrir Topographie">
-                <div class="icon" aria-hidden="true">📐</div>
+                <div class="card-topline"><span class="icon" aria-hidden="true">📐</span><span class="card-number">03</span></div>
+                <span class="card-category">MESURES</span>
                 <h3>Topographie</h3>
-                <p>Mesures et calculs</p>
+                <p>Maîtrisez les mesures, les angles, les distances et les altitudes.</p>
+                <span class="card-link">Explorer le cours <span aria-hidden="true">↗</span></span>
             </article>
             <article class="card" tabindex="0" role="button" aria-label="Ouvrir Géomatique">
-                <div class="icon" aria-hidden="true">🗺️</div>
+                <div class="card-topline"><span class="icon" aria-hidden="true">🗺️</span><span class="card-number">04</span></div>
+                <span class="card-category">CARTOGRAPHIE</span>
                 <h3>Géomatique</h3>
-                <p>Cartographie et SIG</p>
+                <p>Découvrez les SIG, la cartographie et l’analyse spatiale avec QGIS.</p>
+                <span class="card-link">Explorer le cours <span aria-hidden="true">↗</span></span>
             </article>
+        </section>
+
+        <section class="study-banner" aria-label="Cours complet de Géologie du Maroc">
+            <div class="banner-emblem" aria-hidden="true"><span>G</span><i></i></div>
+            <div class="banner-copy"><p class="eyebrow">À la une · Parcours approfondi</p><h2>Plongez dans la géologie du Maroc</h2><p>Un cours complet pour explorer les domaines géologiques, les cycles tectoniques et les grands massifs de l’Anti-Atlas.</p></div>
+            <a class="banner-link" href="geologie-maroc.html">Accéder au cours <span aria-hidden="true">→</span></a>
         </section>
 
         <section id="course-details" class="course-details" aria-live="polite" hidden>
@@ -76,9 +112,7 @@
         </section>
     </main>
 
-    <footer>
-        <p>GeoStudy — Apprendre, comprendre, progresser.</p>
-    </footer>
+    <footer><div class="footer-inner"><a href="#" class="footer-brand"><span class="brand-mark" aria-hidden="true">G</span> GeoStudy</a><p>Apprendre, comprendre, progresser.</p><span class="footer-note">Fait pour les curieux de la Terre <span aria-hidden="true">✦</span></span></div></footer>
     <script src="script.js"></script>
 </body>
 </html>
