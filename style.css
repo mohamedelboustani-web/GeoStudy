@@ -248,3 +248,29 @@ footer p { margin: 0; }
     .course-actions { display: grid; grid-template-columns: 1fr; }
     .quiz-question { padding: 12px; }
 }
+
+
+/* Link to the complete subject lesson */
+.full-course-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 8px 0 14px;
+    padding: 12px 17px;
+    border: 1px solid #b9d9c1;
+    border-radius: 11px;
+    background: var(--green-50);
+    color: var(--green-900);
+    font-weight: 750;
+    text-decoration: none;
+    transition: background .2s ease, border-color .2s ease, transform .2s ease;
+}
+.full-course-link:hover {
+    border-color: var(--green-700);
+    background: var(--green-100);
+    transform: translateY(-1px);
+}
+.full-course-link:focus-visible {
+    outline: 3px solid #82c994;
+    outline-offset: 4px;
+}
