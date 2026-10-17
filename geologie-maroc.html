@@ -1,0 +1,1555 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Géologie du Maroc | GeoStudy</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.8;
+            color: #25352d;
+            background: #f4f7f3;
+        }
+
+        .navbar {
+            background: #173d2b;
+            padding: 16px 6%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .nav-logo {
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links a:hover {
+            color: #a8e6a3;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #174b32, #54835c);
+            color: white;
+            padding: 65px 7%;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: clamp(30px, 5vw, 46px);
+            line-height: 1.3;
+            margin-bottom: 18px;
+        }
+
+        .hero p {
+            max-width: 850px;
+            margin: auto;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 35px auto;
+            padding: 0 22px;
+        }
+
+        .section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 14px #0000000c;
+            scroll-margin-top: 25px;
+        }
+
+        h2 {
+            color: #205d3b;
+            border-bottom: 2px solid #d7e8d8;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: #316b47;
+            margin-top: 22px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 14px;
+        }
+
+        ul, ol {
+            padding-left: 25px;
+            margin-bottom: 18px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .info {
+            background: #edf6ed;
+            border-left: 5px solid #3e8051;
+            padding: 18px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .warning {
+            background: #fff5df;
+            border-left: 5px solid #d59b2a;
+            padding: 18px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .timeline {
+            border-left: 3px solid #75a77b;
+            padding-left: 22px;
+            margin: 20px 0;
+        }
+
+        .timeline div {
+            margin-bottom: 22px;
+        }
+
+        .timeline strong {
+            color: #205d3b;
+        }
+
+        .table-wrap {
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 520px;
+        }
+
+        th, td {
+            border: 1px solid #d6e1d7;
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background: #e6f0e6;
+            color: #214d30;
+        }
+
+        .document {
+            background: #f5f8fb;
+            border: 1px solid #d5e0e9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .document h3 {
+            margin-top: 0;
+            color: #315b7a;
+        }
+
+        a {
+            color: #17643a;
+            overflow-wrap: anywhere;
+        }
+
+        .references a {
+            display: block;
+            margin-bottom: 12px;
+        }
+
+        .back-top {
+            display: inline-block;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #173d2b;
+            color: white;
+            padding: 25px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 650px) {
+            .navbar {
+                justify-content: center;
+            }
+
+            .nav-links {
+                justify-content: center;
+            }
+
+            .section {
+                padding: 20px;
+            }
+
+            .hero {
+                padding: 45px 20px;
+            }
+        }
+.explication-carte {
+  margin: 25px 0;
+  padding: 22px;
+  background: #f0f7f4;
+  border-left: 5px solid #28745b;
+  border-radius: 10px;
+  line-height: 1.8;
+}
+
+.explication-carte h3 {
+  color: #205b48;
+  margin-top: 0;
+}
+
+.explication-carte p {
+  color: #293b35;
+}
+
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar">
+    <a href="index.html" class="nav-logo">GeoStudy</a>
+
+    <div class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="#anti-atlas">Anti-Atlas</a>
+        <a href="#bou-azzer">Bou Azzer</a>
+        <a href="#saghro">Saghro</a>
+        <a href="#kerdous">Kerdous</a>
+        <a href="#references">Références</a>
+    </div>
+</nav>
+
+<header class="hero">
+    <h1>Géologie du Maroc</h1>
+    <p>
+        Étude géologique approfondie de l'Anti-Atlas :
+        évolution du socle précambrien, cycles éburnéen et panafricain,
+        boutonnières, ophiolites, stratigraphie, sédimentation
+        et évolution tectonique du Maroc.
+    </p>
+</header>
+
+<main class="container">
+
+    <!-- INTRODUCTION -->
+
+    <section class="section" id="introduction">
+        <h2>Introduction générale</h2>
+
+        <p>
+            L'Anti-Atlas est une grande chaîne géologique du sud du Maroc.
+            Il se caractérise par l'affleurement de terrains précambriens
+            anciens, localement recouverts par des séries sédimentaires
+            paléozoïques et par des formations plus récentes.
+        
+        <p>
+            L'intérêt de cette région réside dans la conservation de
+            témoins de plusieurs événements géologiques : formation de
+            la croûte continentale, évolution des domaines océaniques,
+            convergence des plaques, magmatisme, métamorphisme,
+            érosion et sédimentation.
+        </p>
+
+        <h3>Objectifs du cours</h3>
+
+        <ul>
+            <li>Comprendre l'organisation géologique de l'Anti-Atlas.</li>
+            <li>Distinguer le cycle éburnéen du cycle panafricain.</li>
+            <li>Expliquer l'intérêt de la boutonnière de Bou Azzer.</li>
+            <li>Comprendre la signification des ophiolites.</li>
+            <li>Étudier les domaines du Saghro et du Kerdous.</li>
+            <li>Relier stratigraphie, sédimentation et tectonique.</li>
+            <li>Apprendre à interpréter une carte ou une coupe géologique.</li>
+        </ul>
+
+        <div class="info">
+            <strong>Notion essentielle :</strong>
+            une boutonnière géologique est une zone où l'érosion met à
+            l'affleurement des terrains anciens, souvent entourés ou
+            recouverts par des formations plus récentes. Ce terme décrit
+            une disposition géologique, et non un type de roche.
+        </div>
+    </section>
+
+    <!-- ANTI-ATLAS -->
+
+    <section class="section" id="anti-atlas">
+        <h2>1. L'Anti-Atlas : cadre géologique général</h2>
+
+        <h3>1.1. Situation et organisation</h3>
+</p>
+        <p>
+            L'Anti-Atlas se situe au sud du Haut Atlas. Il s'étend
+            globalement selon une direction ENE-WSW. Il expose des
+            terrains d'âges variés, depuis le Précambrien jusqu'au
+            Paléozoïque, ainsi que des couvertures plus récentes dans
+            certains secteurs.
+        </p>
+
+
+<figure class="document">
+    <a
+        href="https://cartesgeoscientifiques.mem.gov.ma/catalogue/pages/les_nouveaux_guides_geologiques/livres/vol3/files/basic-html/page13.html"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        <img
+            src="images/anti-atlas/carte-geologique-anti-atlas.jpg"
+            alt="Carte géologique de l’Anti-Atlas"
+            style="width: 100%; height: auto; display: block; margin: auto;"
+            loading="lazy"
+        >
+    </a>
+
+    <figcaption style="margin-top: 12px; text-align: center;">
+        <strong>Carte géologique simplifiée de l’Anti-Atlas.</strong>
+        <br>
+        Cliquez sur la carte pour consulter le document original
+        et agrandir les détails.
+        <br>
+        <a
+            href="https://cartesgeoscientifiques.mem.gov.ma/catalogue/pages/les_nouveaux_guides_geologiques/livres/vol3/files/basic-html/page13.html"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Ouvrir la carte originale
+        </a>
+    </figcaption>
+</figure>
+
+
+        <p>
+            Son architecture actuelle résulte d'une histoire complexe :
+            événements précambriens, évolution des bassins sédimentaires,
+            déformations paléozoïques et réactivation tectonique plus
+            récente associée à l'évolution du domaine atlasique.
+        </p>
+
+        <h3>1.2. Les grands domaines</h3>
+
+        <ul>
+            <li>
+                <strong>Anti-Atlas occidental :</strong>
+                il comprend notamment le domaine du Kerdous et d'autres
+                affleurements du socle ancien.
+            </li>
+            <li>
+                <strong>Anti-Atlas central :</strong>
+                il comprend notamment les boutonnières de Bou Azzer-El
+                Graara et de Sirwa.
+            </li>
+            <li>
+                <strong>Anti-Atlas oriental :</strong>
+                il comprend notamment le massif et la boutonnière du Saghro.
+            </li>
+        </ul>
+
+        <p>
+            Cette subdivision est une simplification régionale utile
+            pour l'étude. Les limites précises dépendent du cadre
+            structural et de la nomenclature retenue par les auteurs.
+        </p>
+
+        <h3>1.3. Le socle précambrien</h3>
+
+        <p>
+            Le socle est constitué de roches magmatiques, métamorphiques
+            et, dans certains secteurs, de séries volcano-sédimentaires.
+            Il enregistre plusieurs épisodes de formation et de
+            transformation de la croûte continentale.
+        </p>
+
+        <p>
+            Parmi les roches rencontrées figurent les granitoïdes,
+            les gneiss, les schistes, les quartzites et différentes
+            roches volcaniques ou volcano-sédimentaires. Leur présence
+            et leur âge varient d'une boutonnière à l'autre.
+        </p>
+
+        <h3>1.4. Le cycle éburnéen</h3>
+
+        <p>
+            Le cycle éburnéen, également appelé événement orogénique
+            éburnéen, correspond principalement à des événements
+            paléoprotérozoïques, autour de 2,1 à 2,0 milliards d'années
+            dans de nombreux secteurs du Craton ouest-africain.
+        </p>
+
+        <p>
+            Ces événements ont participé à la formation, à la
+            déformation et à la consolidation de terrains continentaux
+            anciens. Des granitoïdes et des roches métamorphiques
+            témoignent de cette histoire dans certaines zones de
+            l'Anti-Atlas.
+        </p>
+
+        <div class="info">
+            <strong>À retenir :</strong>
+            le cycle éburnéen est beaucoup plus ancien que le cycle
+            panafricain. Il ne faut donc pas attribuer automatiquement
+            toutes les roches précambriennes de l'Anti-Atlas à un seul
+            cycle tectonique.
+        </div>
+
+        <h3>1.5. Le cycle panafricain</h3>
+
+        <p>
+            Le cycle panafricain correspond à un ensemble d'événements
+            tectoniques et magmatiques néoprotérozoïques liés à
+            l'évolution des domaines océaniques et à l'assemblage
+            continental de Gondwana.
+        </p>
+
+        <p>
+            Dans l'Anti-Atlas central et oriental, plusieurs témoins
+            permettent d'étudier cette évolution : ophiolites,
+            roches d'arc magmatique, granitoïdes, zones de cisaillement,
+            roches métamorphiques et séries volcano-sédimentaires.
+        </p>
+
+        <p>
+            Les événements panafricains se déroulent sur une longue
+            période. Leur chronologie précise varie selon les domaines
+            et les phases tectoniques considérés.
+        </p>
+    </section>
+
+    <!-- BOU AZZER -->
+
+    <section class="section" id="bou-azzer">
+        <h2>2. La boutonnière de Bou Azzer-El Graara</h2>
+
+<figure class="document-geologique">
+  <a href="images/bou-azzer/carte-geologique-bou-azzer.jpg" target="_blank">
+    <img
+      src="images/bou-azzer/carte-geologique-bou-azzer.jpg"
+      alt="Carte géologique de Bou Azzer-El Graara"
+      style="width: 100%; max-width: 900px; height: auto;"
+    >
+  </a>
+  <figcaption>
+    Carte géologique de Bou Azzer–El Graara, Anti-Atlas central.
+  </figcaption>
+</figure>
+
+<div class="explication-carte">
+  <h3>Comment lire la carte géologique de Bou Azzer–El Graara ?</h3>
+
+  <p>
+    La carte géologique permet de localiser les différentes formations
+    rocheuses de la boutonnière de Bou Azzer–El Graara, dans l’Anti-Atlas
+    central. Elle aide à comprendre la répartition des unités géologiques
+    et leurs relations structurales.
+  </p>
+
+  <p>
+    La région est notamment connue pour ses roches ophiolitiques,
+    ses serpentinites et les traces d’une ancienne évolution océanique
+    liée à l’histoire panafricaine.
+  </p>
+
+  <p>
+    <strong>À retenir :</strong> pour interpréter la carte, il faut identifier
+    la légende, les formations rocheuses, les contacts géologiques
+    et les principales structures tectoniques.
+  </p>
+</div>
+        <p>
+            La boutonnière de Bou Azzer-El Graara, située dans
+            l'Anti-Atlas central, est un secteur majeur pour l'étude
+            de la géodynamique panafricaine au Maroc. Elle présente
+            des roches océaniques, des terrains magmatiques et
+            métamorphiques ainsi que des minéralisations remarquables.
+        </p>
+
+<figure class="document">
+    <img
+        src="images/bou-azzer/bou-azzer-serpentinite.jpg"
+        alt="Serpentinite dans la région de Bou Azzer"
+        style="width: 100%; max-width: 850px; display: block; margin: 0 auto; border-radius: 8px;"
+        loading="lazy"
+    >
+
+    <figcaption style="margin-top: 12px; text-align: center;">
+        <strong>Figure 1 — Serpentinites de Bou Azzer.</strong>
+        <br>
+        Ces roches ultramafiques serpentinisées constituent
+        un indice important pour comprendre l’évolution
+        géodynamique de la région.
+        <br>
+        <em>
+Source : article scientifique publié dans Minerals (MDPI).
+Licence : Creative Commons Attribution (CC BY 4.0).
+</em>
+    </figcaption>
+</figure>
+
+        <h3>2.1. Pourquoi Bou Azzer est-elle importante ?</h3>
+
+        <p>
+            Bou Azzer permet d'étudier les relations entre les roches
+            du manteau, la croûte océanique, les processus de
+            subduction, la déformation et la formation de gisements.
+            Les roches ophiolitiques y constituent des témoins
+            particulièrement importants.
+        </p>
+
+        <p>
+            Une ophiolite est un ensemble de roches interprété comme
+            un fragment de lithosphère océanique et de manteau
+            supérieur, déplacé et incorporé dans un domaine continental
+            ou orogénique.
+        </p>
+
+        <h3>2.2. Les principales roches</h3>
+
+        <ul>
+            <li>
+                <strong>Péridotites :</strong>
+                roches ultramafiques issues du manteau supérieur.
+            </li>
+            <li>
+                <strong>Serpentinites :</strong>
+                roches formées par transformation hydratée de minéraux
+                ultramafiques, notamment lors de la serpentinisation.
+            </li>
+            <li>
+                <strong>Gabbros :</strong>
+                roches magmatiques plutoniques généralement riches en
+                plagioclase et en pyroxène.
+            </li>
+            <li>
+                <strong>Roches volcaniques :</strong>
+                certaines unités sont interprétées dans le contexte
+                de l'activité magmatique associée aux domaines océaniques.
+            </li>
+            <li>
+                <strong>Roches métamorphiques :</strong>
+                elles enregistrent les transformations subies au cours
+                de l'évolution tectonique.
+            </li>
+            <li>
+                <strong>Granitoïdes et diorites :</strong>
+                ils témoignent d'épisodes magmatiques distincts de la
+                formation initiale des roches océaniques.
+            </li>
+        </ul>
+
+        <div class="info">
+            <strong>Attention :</strong>
+            la boutonnière ne correspond pas à une série de roches
+            homogène. Les unités peuvent être discontinues, déformées,
+            métamorphisées et séparées par des contacts tectoniques.
+        </div>
+
+        <h3>2.3. Comment se forme une ophiolite ?</h3>
+
+        <p>
+            Dans un domaine océanique, du magma peut former une croûte
+            océanique au-dessus d'un manteau supérieur. Lorsqu'une
+            convergence tectonique se produit, des portions de cette
+            lithosphère peuvent être déformées, transformées et
+            transportées vers une marge continentale.
+        </p>
+
+        <p>
+            Dans certains contextes, des fragments de lithosphère
+            océanique sont mis en place sur une autre unité :
+            ce processus est appelé <strong>obduction</strong>.
+            L'interprétation de Bou Azzer fait appel à des données
+            pétrologiques, géochimiques, structurales et géochronologiques.
+        </p>
+
+        <h3>2.4. Subduction et obduction : quelle différence ?</h3>
+
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Processus</th>
+                        <th>Définition</th>
+                        <th>Signification géologique</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Subduction</td>
+                        <td>
+                            Une plaque lithosphérique plonge sous une
+                            autre plaque.
+                        </td>
+                        <td>
+                            Elle peut produire un métamorphisme,
+                            un magmatisme d'arc et une consommation
+                            de lithosphère océanique.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Obduction</td>
+                        <td>
+                            Des fragments de lithosphère océanique
+                            sont transportés sur une autre unité.
+                        </td>
+                        <td>
+                            Elle peut expliquer la présence de roches
+                            océaniques dans un domaine continental.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Collision</td>
+                        <td>
+                            Convergence impliquant le rapprochement
+                            puis l'interaction de masses continentales.
+                        </td>
+                        <td>
+                            Elle peut provoquer raccourcissement,
+                            épaississement crustal et déformation.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p>
+          
+<section id="evolution-geodynamique-bou-azzer">
+  <h3>2.5. Évolution géodynamique de Bou Azzer–El Graara</h3>
+
+  <p>
+    La boutonnière de Bou Azzer–El Graara, située dans l’Anti-Atlas central,
+    constitue un secteur majeur pour l’étude de l’évolution géodynamique
+    néoprotérozoïque et de l’orogenèse panafricaine. La présence de roches
+    ophiolitiques, notamment de serpentinites, témoigne de l’existence
+    d’anciens domaines océaniques et de leur incorporation dans une
+    architecture tectonique complexe.
+  </p>
+
+  <h4>1. Mise en place de la lithosphère océanique</h4>
+  <p>
+    La formation d’un domaine océanique permet la mise en place de roches
+    caractéristiques de la lithosphère océanique, notamment des roches
+    ultramafiques et mafiques. Les assemblages observés à Bou Azzer apportent
+    des informations sur cette histoire océanique.
+  </p>
+
+  <h4>2. Convergence des domaines lithosphériques</h4>
+  <p>
+    Le rapprochement des domaines lithosphériques entraîne une évolution
+    tectonique progressive. Cette convergence peut s’accompagner de
+    déformations, de transformations métamorphiques et de structures
+    associées aux zones de convergence.
+  </p>
+
+  <h4>3. Processus liés à la subduction</h4>
+  <p>
+    Les relations pétrologiques et géochimiques entre certaines roches
+    peuvent contribuer à identifier des processus associés à la subduction.
+    Leur interprétation nécessite de prendre en compte les caractéristiques
+    propres aux différentes unités ophiolitiques.
+  </p>
+
+  <h4>4. Incorporation tectonique des unités ophiolitiques</h4>
+  <p>
+    Au cours de l’évolution panafricaine, des unités d’origine océanique
+    sont intégrées à l’architecture tectonique régionale. L’obduction peut
+    expliquer la mise en place de certaines unités océaniques sur des
+    domaines voisins, mais son rôle et sa chronologie doivent être précisés
+    à partir des données géologiques locales.
+  </p>
+
+  <h4>5. Déformation et évolution métamorphique</h4>
+  <p>
+    Les roches enregistrent différents phénomènes tectoniques, tels que
+    la fracturation, le cisaillement et, selon les unités, le plissement
+    ou les transformations métamorphiques. Ces structures permettent de
+    reconstituer une partie de l’histoire tectonique de la région.
+  </p>
+
+  <h4>6. Exhumation et mise à l’affleurement</h4>
+  <p>
+    L’érosion et les mouvements tectoniques contribuent progressivement
+    à la mise à l’affleurement des formations profondes. Les roches
+    ophiolitiques et les serpentinites deviennent ainsi accessibles
+    à l’observation géologique.
+  </p>
+
+  <h4>Bilan géodynamique</h4>
+  <p>
+    L’évolution de Bou Azzer–El Graara témoigne d’une histoire complexe
+    associant des processus océaniques, des phénomènes de convergence
+    et l’intégration tectonique d’unités géologiques au cours de
+    l’orogenèse panafricaine. La reconstitution précise de cette évolution
+    repose sur la confrontation des données de terrain, des relations
+    structurales, de la pétrographie et des analyses géochimiques.
+  </p>
+</section>
+
+        <h3>2.6. Métamorphisme et déformation</h3>
+
+        <p>
+            Au cours de l'évolution tectonique, les roches peuvent subir
+            des changements minéralogiques et structuraux sous l'effet
+            de la température, de la pression et de la circulation
+            des fluides.
+        </p>
+
+        <p>
+            La serpentinisation correspond à l'hydratation de roches
+            ultramafiques. Elle modifie leur minéralogie et peut
+            influencer leurs propriétés mécaniques et leurs
+            interactions avec les fluides.
+        </p>
+
+        <p>
+            Les failles, les zones de cisaillement et les contacts
+            entre lithologies différentes contribuent à l'organisation
+            actuelle de la boutonnière.
+        </p>
+
+        <h3>2.7. Minéralisations de Bou Azzer</h3>
+
+        <p>
+            Bou Azzer est connue pour ses minéralisations en cobalt.
+            Le secteur présente aussi des associations minérales
+            contenant notamment du nickel, de l'arsenic et de l'or,
+            ainsi que des occurrences de chromite et d'autres
+            substances minérales.
+        </p>
+
+        <p>
+            Les minéralisations ne sont pas toutes issues du même
+            processus. Leur origine dépend notamment de la nature
+            des roches, des circulations de fluides, des réactions
+            entre fluides et roches et de l'histoire tectonique.
+        </p>
+
+        <ul>
+            <li>
+                <strong>Cobalt :</strong>
+                élément caractéristique de plusieurs minéralisations
+                du district.
+            </li>
+            <li>
+                <strong>Nickel :</strong>
+                présent dans certaines associations minérales
+                liées aux roches ultramafiques.
+            </li>
+            <li>
+                <strong>Chromite :</strong>
+                minéral observé dans certaines unités ultramafiques
+                de l'ensemble ophiolitique.
+            </li>
+            <li>
+                <strong>Or :</strong>
+                signalé dans certaines associations métallifères
+                du district.
+            </li>
+        </ul>
+
+        <p>
+            L'étude de ces gisements illustre le lien entre géologie
+            fondamentale, circulation des fluides et métallogénie.
+        </p>
+
+        <h3>2.8. Comment interpréter un document géologique de Bou Azzer ?</h3>
+
+        <ol>
+            <li>
+                Identifier la nature du document : carte, coupe,
+                photographie d'affleurement ou diagramme pétrologique.
+            </li>
+            <li>
+                Repérer les unités lithologiques et leurs légendes.
+            </li>
+            <li>
+                Identifier les contacts : stratigraphiques,
+                intrusifs ou tectoniques.
+            </li>
+            <li>
+                Rechercher les indices de déformation : failles,
+                plis, cisaillements et orientations structurales.
+            </li>
+            <li>
+                Relier les observations à une interprétation
+                géodynamique, sans confondre observation et hypothèse.
+            </li>
+        </ol>
+
+        <div class="document">
+            <h3>Document scientifique 1 — Ophiolites de Bou Azzer</h3>
+
+            <p>
+                Article de synthèse sur la ceinture panafricaine
+                de l'Anti-Atlas et l'évolution des domaines océaniques.
+            </p>
+
+            <a href="https://comptes-rendus.academie-sciences.fr/geoscience/articles/en/10.1016/j.crte.2018.07.002/"
+               target="_blank" rel="noopener noreferrer">
+                Consulter l'article scientifique de Soulaimani et al.
+                (2018)
+            </a>
+
+            <p>
+                <strong>À rechercher dans le document :</strong>
+                la carte régionale, la position des boutonnières
+                et les figures qui expliquent l'évolution du domaine
+                océanique panafricain.
+            </p>
+        </div>
+
+        <div class="document">
+            <h3>Document scientifique 2 — Chromites de Bou Azzer</h3>
+
+            <p>
+                Étude consacrée aux chromitites de l'ophiolite
+                néoprotérozoïque de Bou Azzer.
+            </p>
+
+            <a href="https://www.sciencedirect.com/science/article/pii/S0169136821001918"
+               target="_blank" rel="noopener noreferrer">
+                Consulter l'étude sur les chromitites
+            </a>
+
+            <p>
+                <strong>Intérêt :</strong>
+                comprendre comment la composition minéralogique
+                et géochimique des roches permet de discuter
+                leur contexte de formation.
+            </p>
+        </div>
+
+        <div class="document">
+            <h3>Document scientifique 3 — Métallogénie</h3>
+
+            <p>
+                Étude des minéralisations cobaltifères de la
+                boutonnière de Bou Azzer.
+            </p>
+
+            <a href="https://www.researchgate.net/publication/287210020_Nouvelles_donnees_isotopiques_et_d%27inclusions_fluides_des_mineralisations_cobaltiferes_de_Bou_Azzer_Apport_a_la_geologie_economique_de_la_boutonniere_Anti-Atlas_central_Maroc"
+               target="_blank" rel="noopener noreferrer">
+                Consulter la référence sur les minéralisations
+                cobaltifères
+            </a>
+
+            <p>
+                <strong>Intérêt :</strong>
+                relier les lithologies, les fluides et les
+                minéralisations à l'histoire géologique régionale.
+            </p>
+        </div>
+    </section>
+
+    <!-- SAGHRO -->
+
+    <section class="section" id="saghro">
+        <h2>3. Le massif et la boutonnière du Saghro</h2>
+
+        <h3>3.1. Cadre géologique</h3>
+
+        <p>
+            Le Saghro appartient à l'Anti-Atlas oriental. Il expose
+            un ensemble de terrains précambriens et des séries
+            volcano-sédimentaires qui enregistrent différentes
+            étapes de l'évolution néoprotérozoïque.
+        </p>
+
+        <p>
+            Il est particulièrement intéressant pour comprendre
+            les relations entre sédimentation, volcanisme,
+            déformation et évolution panafricaine.
+        </p>
+
+        <h3>3.2. Les séries volcano-sédimentaires</h3>
+
+        <p>
+            Une série volcano-sédimentaire associe des produits
+            volcaniques à des dépôts sédimentaires. Cette association
+            peut refléter une activité tectonique et magmatique
+            contemporaine du dépôt.
+        </p>
+
+        <p>
+            Dans le Saghro, les terrains néoprotérozoïques sont
+            étudiés pour reconstituer l'évolution des bassins,
+            les épisodes volcaniques et les déformations qui ont
+            affecté la région.
+        </p>
+
+        <h3>3.3. Le Groupe du Saghro</h3>
+
+        <p>
+            Le terme « Groupe du Saghro » désigne un ensemble
+            lithostratigraphique utilisé dans les travaux consacrés
+            au Néoprotérozoïque de l'Anti-Atlas. Il ne faut pas le
+            confondre avec le massif géographique tout entier.
+        </p>
+
+        <p>
+            Les interprétations de ces séries reposent sur leur
+            lithologie, leurs relations stratigraphiques, leur
+            contexte structural et les datations disponibles.
+        </p>
+
+        <h3>3.4. Intérêt tectonique</h3>
+
+        <p>
+            Les structures du Saghro permettent d'étudier les
+            déformations panafricaines, les contacts entre unités
+            et les réorganisations ultérieures du socle.
+            La reconstruction de la chronologie nécessite de
+            distinguer les structures anciennes des structures
+            réactivées plus tard.
+        </p>
+
+        <div class="document">
+            <h3>Document scientifique — Saghro et Bou Azzer</h3>
+
+            <p>
+                Article sur l'évolution tectonique néoprotérozoïque
+                des boutonnières du Jebel Saghro et de Bou Azzer-El Graara.
+            </p>
+
+            <a href="https://www.sciencedirect.com/science/article/abs/pii/S0301926812001520"
+               target="_blank" rel="noopener noreferrer">
+                Consulter l'étude sur l'évolution tectonique
+            </a>
+        </div>
+    </section>
+
+    <!-- KERDOUS -->
+
+    <section class="section" id="kerdous">
+        <h2>4. Le domaine et la boutonnière du Kerdous</h2>
+
+        <h3>4.1. Situation géologique</h3>
+
+        <p>
+            Le Kerdous appartient à l'Anti-Atlas occidental.
+            Il expose des terrains anciens et constitue un secteur
+            important pour l'étude de l'histoire du socle
+            précambrien de cette partie du Maroc.
+        </p>
+
+        <h3>4.2. Nature des terrains</h3>
+
+        <p>
+            Les unités du domaine comprennent des roches
+            métamorphiques, des granitoïdes et différentes
+            formations dont les âges et les relations ont fait
+            l'objet de discussions scientifiques.
+        </p>
+
+        <p>
+            Il est important de ne pas attribuer automatiquement
+            toutes les roches du Kerdous au cycle éburnéen :
+            certaines unités et certains événements nécessitent
+            une interprétation chronologique spécifique.
+        </p>
+
+        <h3>4.3. Kerdous et évolution de la croûte continentale</h3>
+
+        <p>
+            Les travaux géochronologiques, notamment les datations
+            U-Pb sur zircon, permettent de distinguer plusieurs
+            épisodes de formation et de transformation des roches.
+            Ils aident à établir l'âge de cristallisation de certains
+            granitoïdes et à étudier la provenance des sédiments.
+        </p>
+
+        <h3>4.4. Intérêt pour la comparaison régionale</h3>
+
+        <p>
+            Le Kerdous représente un point de comparaison avec les
+            domaines central et oriental de l'Anti-Atlas. Cette
+            comparaison aide à identifier les différences entre
+            un socle ancien et des secteurs où les témoins de
+            l'évolution océanique panafricaine sont particulièrement
+            visibles.
+        </p>
+
+        <div class="document">
+            <h3>Document géologique — Kerdous</h3>
+
+            <p>
+                Guide géologique et minier du Maroc : informations
+                et documents cartographiques sur le Kerdous.
+            </p>
+
+            <a href="https://cartesgeoscientifiques.mem.gov.ma/catalogue/pages/les_nouveaux_guides_geologiques/livres/vol3/files/basic-html/page21.html"
+               target="_blank" rel="noopener noreferrer">
+                Consulter le guide géologique du Kerdous
+            </a>
+
+            <p>
+                <strong>Travail conseillé :</strong>
+                repérer les unités sur la carte, identifier les
+                lithologies dans la légende et expliquer leurs
+                relations spatiales.
+            </p>
+        </div>
+    </section>
+
+    <!-- STRATIGRAPHIE -->
+
+    <section class="section" id="stratigraphie">
+        <h2>5. Stratigraphie et sédimentation de l'Anti-Atlas</h2>
+
+        <h3>5.1. La stratigraphie</h3>
+
+        <p>
+            La stratigraphie étudie la succession, l'âge, la nature
+            et les relations entre les couches géologiques.
+            Elle permet de reconstituer l'histoire d'un bassin
+            et de comparer des séries observées dans plusieurs régions.
+        </p>
+
+        <h3>5.2. Les dépôts néoprotérozoïques</h3>
+
+        <p>
+            Les séries néoprotérozoïques de l'Anti-Atlas comprennent
+            différentes formations sédimentaires et volcano-sédimentaires.
+            Certaines sont associées à des environnements extensifs,
+            à des bassins contrôlés par des failles ou à l'évolution
+            des domaines panafricains.
+        </p>
+
+        <h3>5.3. Le Groupe de Ouarzazate</h3>
+
+        <p>
+            Le Groupe ou Supergroupe de Ouarzazate, selon la
+            nomenclature employée, comprend des ensembles
+            volcano-sédimentaires édiacariens. Ils enregistrent
+            notamment des épisodes de volcanisme et de sédimentation
+            associés à l'évolution postérieure aux principales
+            phases de déformation panafricaine.
+        </p>
+
+        <p>
+            Les conglomérats, grès, dépôts volcaniques et autres
+            lithologies, selon les secteurs, renseignent sur les
+            reliefs, l'érosion, le transport et l'activité magmatique.
+        </p>
+
+        <h3>5.4. Les séries paléozoïques</h3>
+
+        <p>
+            Les formations paléozoïques recouvrent localement le
+            socle précambrien. Elles comprennent notamment des
+            dépôts sédimentaires dont la nature varie avec les
+            périodes et les environnements de dépôt.
+        </p>
+
+        <p>
+            Leur étude permet de reconstituer l'évolution des
+            environnements marins ou continentaux, les variations
+            du niveau marin et les changements tectoniques.
+        </p>
+
+        <h3>5.5. Les principes de datation relative</h3>
+
+        <ul>
+            <li>
+                <strong>Superposition :</strong>
+                dans une série non renversée, une couche inférieure
+                est généralement plus ancienne qu'une couche supérieure.
+            </li>
+            <li>
+                <strong>Recoupement :</strong>
+                une structure qui en recoupe une autre lui est
+                généralement postérieure.
+            </li>
+            <li>
+                <strong>Inclusion :</strong>
+                un fragment inclus dans une roche est généralement
+                plus ancien que la roche qui l'englobe.
+            </li>
+            <li>
+                <strong>Discordance :</strong>
+                elle peut signaler une période d'érosion ou de
+                non-dépôt entre deux ensembles géologiques.
+            </li>
+        </ul>
+
+        <div class="info">
+            <strong>Pour l'examen :</strong>
+            commence par décrire ce que tu observes dans le document.
+            Ensuite, établis les relations chronologiques, puis
+            propose une interprétation géologique argumentée.
+        </div>
+    </section>
+
+    <!-- TECTONIQUE -->
+
+    <section class="section" id="tectonique">
+        <h2>6. Tectonique et évolution postérieure</h2>
+
+        <h3>6.1. Déformation hercynienne ou varisque</h3>
+
+        <p>
+            L'orogenèse varisque, souvent appelée hercynienne dans
+            l'enseignement francophone, a affecté de nombreuses
+            régions du Maroc au cours du Paléozoïque.
+        </p>
+
+        <p>
+            Dans les séries paléozoïques, elle peut se manifester
+            par des plis, des failles, des schistosités et des
+            intrusions magmatiques selon les secteurs.
+        </p>
+
+        <p>
+            Son importance et son expression varient dans
+            l'Anti-Atlas. Il faut éviter de supposer que chaque
+            structure visible dans le socle est hercynienne :
+            certaines sont précambriennes et d'autres peuvent
+            avoir été réactivées.
+        </p>
+
+        <h3>6.2. Inversion tectonique</h3>
+
+        <p>
+            L'inversion tectonique désigne la réutilisation d'une
+            structure ancienne dans un régime de contraintes différent.
+            Par exemple, une ancienne faille normale formée lors
+            d'une extension peut être réactivée en contexte compressif.
+        </p>
+
+        <p>
+            L'identification d'une inversion nécessite des indices
+            structuraux : géométrie de la faille, déplacement des
+            couches, relations de recoupement et chronologie des
+            déformations.
+        </p>
+
+        <h3>6.3. Réactivation alpine</h3>
+
+        <p>
+            Au Cénozoïque, les contraintes liées à la convergence
+            entre l'Afrique et l'Eurasie ont contribué à la formation
+            et à l'évolution du domaine atlasique. Certaines
+            structures plus anciennes de l'Anti-Atlas ont pu être
+            réactivées et la région a connu un soulèvement.
+        </p>
+
+        <p>
+            Cette évolution récente ne remplace pas l'histoire
+            précambrienne de l'Anti-Atlas : elle s'y superpose.
+            Pour établir une chronologie, il faut donc distinguer
+            la formation initiale d'une structure de ses réactivations.
+        </p>
+    </section>
+
+    <!-- COMPARAISON -->
+
+    <section class="section" id="comparaison">
+        <h2>7. Comparaison entre Bou Azzer, Saghro et Kerdous</h2>
+
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Domaine</th>
+                        <th>Position régionale</th>
+                        <th>Intérêt géologique majeur</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bou Azzer-El Graara</td>
+                        <td>Anti-Atlas central</td>
+                        <td>
+                            Ophiolites, évolution océanique,
+                            événements panafricains et cobalt.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Saghro</td>
+                        <td>Anti-Atlas oriental</td>
+                        <td>
+                            Séries volcano-sédimentaires,
+                            évolution néoprotérozoïque et structures.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Kerdous</td>
+                        <td>Anti-Atlas occidental</td>
+                        <td>
+                            Socle ancien, roches métamorphiques,
+                            granitoïdes et géochronologie.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p>
+            Ces trois domaines sont complémentaires. Bou Azzer
+            est particulièrement important pour l'étude des
+            ophiolites et de la métallogénie. Le Saghro permet
+            d'étudier différentes séries néoprotérozoïques et leur
+            évolution tectonique. Le Kerdous apporte des éléments
+            importants sur l'histoire du socle de l'Anti-Atlas occidental.
+        </p>
+
+        <p>
+            Il ne faut toutefois pas considérer ces domaines comme
+            trois étapes successives d'une même histoire simple :
+            ils exposent des unités différentes, dont les relations
+            doivent être établies à partir des données géologiques.
+        </p>
+    </section>
+
+    <!-- CHRONOLOGIE -->
+
+    <section class="section" id="chronologie">
+        <h2>8. Synthèse chronologique</h2>
+
+        <div class="timeline">
+            <div>
+                <strong>Paléoprotérozoïque — environ 2,1 à 2,0 Ga</strong>
+                <p>
+                    Événements éburnéens et évolution de terrains
+                    anciens du Craton ouest-africain.
+                </p>
+            </div>
+
+            <div>
+                <strong>Néoprotérozoïque — environ 760 à 660 Ma</strong>
+                <p>
+                    Évolution de domaines océaniques, magmatisme
+                    et premiers épisodes panafricains documentés
+                    dans plusieurs unités de l'Anti-Atlas.
+                </p>
+            </div>
+
+            <div>
+                <strong>Néoprotérozoïque — environ 650 à 600 Ma</strong>
+                <p>
+                    Différents épisodes d'accrétion, de magmatisme,
+                    de déformation et de métamorphisme panafricains,
+                    selon les domaines étudiés.
+                </p>
+            </div>
+
+            <div>
+                <strong>Édiacarien — jusqu'à environ 539 Ma</strong>
+                <p>
+                    Développement de séries volcano-sédimentaires
+                    et de formations associées à l'évolution
+                    postérieure aux principales phases panafricaines.
+                </p>
+            </div>
+
+            <div>
+                <strong>Paléozoïque</strong>
+                <p>
+                    Dépôts sédimentaires, évolution des bassins
+                    et déformations varisques ou hercyniennes.
+                </p>
+            </div>
+
+            <div>
+                <strong>Cénozoïque</strong>
+                <p>
+                    Réorganisation tectonique du domaine atlasique,
+                    soulèvement régional et réactivation possible
+                    de structures plus anciennes.
+                </p>
+            </div>
+        </div>
+
+        <div class="warning">
+            Les âges sont indicatifs et résument des événements
+            différents. Pour une datation précise d'une formation
+            ou d'une structure, il faut consulter la référence
+            scientifique propre à cette unité.
+        </div>
+    </section>
+
+    <!-- METHODE -->
+
+    <section class="section" id="methode">
+        <h2>9. Méthode d'analyse d'un document géologique</h2>
+
+        <h3>Étape 1 : présenter le document</h3>
+
+        <p>
+            Indiquer sa nature, son titre, son échelle si elle est
+            disponible, sa localisation et le phénomène étudié.
+        </p>
+
+        <h3>Étape 2 : décrire les observations</h3>
+
+        <p>
+            Décrire les roches, les unités, les contacts, les plis,
+            les failles et les relations spatiales sans proposer
+            immédiatement une interprétation.
+        </p>
+
+        <h3>Étape 3 : établir la chronologie</h3>
+
+        <p>
+            Utiliser les relations de superposition, de recoupement,
+            les discordances et les datations fournies.
+        </p>
+
+        <h3>Étape 4 : interpréter</h3>
+
+        <p>
+            Relier les observations aux processus géologiques
+            possibles : sédimentation, volcanisme, subduction,
+            obduction, métamorphisme ou déformation.
+        </p>
+
+        <h3>Étape 5 : conclure</h3>
+
+        <p>
+            Résumer les résultats et préciser les limites de
+            l'interprétation lorsque plusieurs modèles sont possibles.
+        </p>
+    </section>
+
+<!-- CARTES GEOLOGIQUES ET PHOTOGRAPHIES -->
+
+<section class="section" id="documents-geologiques">
+    <h2>Cartes géologiques et documents de terrain</h2>
+
+    <p>
+        Cette galerie rassemble des documents scientifiques consacrés
+        à l'Anti-Atlas marocain. Les cartes permettent d'identifier
+        les unités géologiques, tandis que les photographies de terrain
+        aident à reconnaître les roches et les structures.
+    </p>
+
+    <div class="document">
+        <h3>1. Carte géologique générale de l'Anti-Atlas</h3>
+
+        <p>
+            Cette carte régionale permet de situer les terrains
+            précambriens, les boutonnières et les grandes unités
+            géologiques de l'Anti-Atlas.
+        </p>
+
+        <p>
+            <strong>Comment l'étudier :</strong>
+            repérer les domaines occidental, central et oriental,
+            puis comparer leurs unités géologiques.
+        </p>
+
+        <a href="https://www.mdpi.com/2075-163X/16/5/460"
+           target="_blank" rel="noopener noreferrer">
+            Consulter l'article scientifique et sa carte régionale
+        </a>
+    </div>
+
+    <div class="document">
+        <h3>2. Bou Azzer : carte géologique et ophiolites</h3>
+
+        <p>
+            La documentation scientifique présente les principales
+            unités lithotectoniques de Bou Azzer-El Graara, notamment
+            les unités ophiolitiques, les associations magmatiques
+            et les terrains de marge continentale.
+        </p>
+
+        <p>
+            <strong>À observer :</strong>
+            les contacts entre unités, les corps de serpentinite
+            et les relations entre les roches océaniques et les
+            autres terrains.
+        </p>
+
+        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0301926810001592"
+           target="_blank" rel="noopener noreferrer">
+            Consulter la carte et l'étude structurale de Bou Azzer
+        </a>
+
+        <a href="https://comptes-rendus.academie-sciences.fr/geoscience/articles/10.1016/j.crte.2019.01.002/"
+           target="_blank" rel="noopener noreferrer">
+            Étudier les serpentinites de la zone de faille d'Aït Ahmane
+        </a>
+    </div>
+
+    <div class="document">
+        <h3>3. Saghro : carte géologique du massif</h3>
+
+        <p>
+            Le guide géologique du Maroc présente une carte simplifiée
+            du Saghro et distingue plusieurs ensembles, notamment
+            les séries turbiditiques, les basaltes et différents
+            granitoïdes.
+        </p>
+
+        <p>
+            <strong>À observer :</strong>
+            les relations spatiales entre le Groupe du Saghro,
+            les granitoïdes associés et le Groupe de Ouarzazate.
+        </p>
+
+        <a href="https://cartesgeoscientifiques.mem.gov.ma/catalogue/pages/les_nouveaux_guides_geologiques/livres/vol8/files/basic-html/page108.html"
+           target="_blank" rel="noopener noreferrer">
+            Ouvrir le guide officiel et consulter la carte du Saghro
+        </a>
+    </div>
+
+    <div class="document">
+        <h3>4. Kerdous : carte géologique du socle précambrien</h3>
+
+        <p>
+            Ce document présente une carte géologique simplifiée
+            du massif précambrien du Kerdous, réalisée à partir
+            de cartes géologiques détaillées.
+        </p>
+
+        <p>
+            <strong>À observer :</strong>
+            les différentes formations, leurs limites et leur
+            organisation dans le socle ancien.
+        </p>
+
+        <a href="https://cartesgeoscientifiques.mem.gov.ma/catalogue/pages/les_nouveaux_guides_geologiques/livres/vol3/files/basic-html/page21.html"
+           target="_blank" rel="noopener noreferrer">
+            Ouvrir la carte géologique du Kerdous
+        </a>
+    </div>
+
+    <div class="document">
+        <h3>5. Photographies de terrain de Bou Azzer</h3>
+
+        <p>
+            Les figures de l'article scientifique illustrent des
+            affleurements de serpentinite, des associations
+            métagabbro-diabasiques et les contacts entre différentes
+            unités géologiques.
+        </p>
+
+        <p>
+            <strong>Exercice d'observation :</strong>
+            décrire la couleur, la texture, les fractures et les
+            contacts visibles, puis proposer une interprétation
+            en distinguant les observations des hypothèses.
+        </p>
+
+        <a href="https://www.mdpi.com/2075-163X/16/5/460"
+           target="_blank" rel="noopener noreferrer">
+            Voir les photographies et figures de l'article
+        </a>
+    </div>
+
+    <div class="info">
+        <strong>Important :</strong>
+        les liens ouvrent les documents publiés par leurs sources.
+        Pour afficher chaque carte ou photographie directement dans
+        GeoStudy, il faudra intégrer le fichier image correspondant
+        et conserver sa légende, sa source et les informations de
+        licence. Une image illustrative ne doit pas être présentée
+        comme une carte géologique officielle.
+    </div>
+</section>
+
+    <!-- REFERENCES -->
+
+    <section class="section references" id="references">
+        <h2>10. Références scientifiques</h2>
+
+        <p>
+            Les liens suivants permettent de consulter des articles
+            scientifiques et des documents géologiques utiles pour
+            approfondir les thèmes présentés dans ce cours.
+        </p>
+
+        <a href="https://comptes-rendus.academie-sciences.fr/geoscience/articles/en/10.1016/j.crte.2018.07.002/"
+           target="_blank" rel="noopener noreferrer">
+            1. Soulaimani et al. (2018) — The Anti-Atlas Pan-African Belt
+        </a>
+
+        <a href="https://www.sciencedirect.com/science/article/pii/S0899536204000971"
+           target="_blank" rel="noopener noreferrer">
+            2. Thomas et al. (2004) — A new lithostratigraphic framework
+            for the Anti-Atlas Orogen, Morocco
+        </a>
+
+        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0301926812001520"
+           target="_blank" rel="noopener noreferrer">
+            3. Étude sur l'évolution tectonique du Saghro et de Bou Azzer-El Graara
+        </a>
+
+        <a href="https://www.sciencedirect.com/science/article/pii/S0169136821001918"
+           target="_blank" rel="noopener noreferrer">
+            4. Étude scientifique sur les chromitites de l'ophiolite de Bou Azzer
+        </a>
+
+        <a href="https://www.usgs.gov/publications/neoproterozoic-cambrian-stratigraphic-framework-anti-atlas-and-ouzellagh-promontory"
+           target="_blank" rel="noopener noreferrer">
+            5. Alvaro et al. (2014) — Cadre stratigraphique
+            néoprotérozoïque-cambrien de l'Anti-Atlas
+        </a>
+
+        <a href="https://cartesgeoscientifiques.mem.gov.ma/catalogue/pages/les_nouveaux_guides_geologiques/livres/vol3/files/basic-html/page21.html"
+           target="_blank" rel="noopener noreferrer">
+            6. Guides géologiques et miniers du Maroc — Kerdous
+        </a>
+
+        <p>
+            <strong>Note :</strong> ce cours constitue une synthèse
+            pédagogique. Pour un travail universitaire, les âges,
+            les noms des formations et les interprétations doivent
+            être vérifiés dans les publications originales.
+        </p>
+
+        <a href="#introduction" class="back-top">
+            ↑ Retour au début du cours
+        </a>
+    </section>
+
+</main>
+
+<footer>
+    <p>GeoStudy — Apprendre et comprendre la géologie du Maroc</p>
+    <p>Anti-Atlas · Bou Azzer · Saghro · Kerdous</p>
+</footer>
+
+</body>
+</html>

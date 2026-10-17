@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoStudy - Apprendre la géologie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="#" class="nav-logo">GeoStudy</a>
+
+    <div class="nav-links">
+        <a href="#">Accueil</a>
+        <a href="#matieres">Matières</a>
+        <a href="#course-details">Mes cours</a>
+    </div>
+</nav>
+
+    <header class="hero">
+        <p class="logo">GEOSTUDY</p>
+        <h1>Apprenez la géologie autrement</h1>
+        <p class="description">
+            Organisez vos cours et progressez chaque jour.
+        </p>
+    </header>
+
+    <main class="container" id="matieres">
+        <h2>Mes matières</h2>
+
+        <section class="cards">
+
+            <article class="card">
+                <div class="icon">⛰️</div>
+                <h3>Géologie du Maroc</h3>
+                <p>Cours et révisions</p>
+            </article>
+
+            <article class="card">
+                <div class="icon">🛰️</div>
+                <h3>Télédétection</h3>
+                <p>Images satellitaires</p>
+            </article>
+
+            <article class="card">
+                <div class="icon">📐</div>
+                <h3>Topographie</h3>
+                <p>Mesures et calculs</p>
+            </article>
+
+            <article class="card">
+                <div class="icon">🗺️</div>
+                <h3>Géomatique</h3>
+                <p>Cartographie et SIG</p>
+            </article>
+
+        </section>
+<section id="course-details" class="course-details" hidden>
+    <h2 id="course-title"></h2>
+    <p id="course-description"></p>
+
+    <button id="read-course">Lire le cours</button>
+    <button id="close-course">Retour aux matières</button>
+
+    <div id="course-content" hidden></div>
+</section>
+</main>
+
+    <footer>
+        <p>GeoStudy — Apprendre, comprendre, progresser.</p>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
